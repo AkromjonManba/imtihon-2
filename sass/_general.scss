@@ -13,6 +13,10 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
+  background-image: url("../images/body-bgi-img.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color:#333;
 }
 
 main {

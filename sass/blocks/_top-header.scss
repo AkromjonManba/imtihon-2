@@ -1,0 +1,120 @@
+.top-header {
+    background-color: #f9f9f9;
+    padding-top: 10px;
+    padding-bottom: 14px;
+}
+
+.header__top {
+    @include flex-start;
+    justify-content: center;
+}
+
+.header__top-add-left {
+    @include flex-start;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    margin-right: 106px;
+    &::before {
+        content: "";
+        position: relative;
+        background-image: url("../../images/top-header-home.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 14px;
+        height: 13px;
+        margin-right: 9px;
+    }   
+}
+
+.header__dflex {
+    @include flex-start;
+    margin-left: 98px;
+    &::before {
+        content: "";
+        position: relative;
+        background-image: url("../../images/top-header-tel.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 13px;
+        height: 13px;
+        margin-right: 9px;
+    }   
+}
+
+.tel__one {
+    display: inline-block;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.tel__two {
+    display: inline-block;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    margin-left: 22px;
+    text-decoration: none;
+}
+
+.tel__there {
+    display: inline-block;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    margin-left: 22px;
+    text-decoration: none;
+}
+
+.header__dflex {
+    @include flex-start;
+    &::before {
+        content: "";
+        position: relative;
+        background-image: url("../../images/top-header-renm.svg");
+        width: 14px;
+        height: 14px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-right: 7px;
+    } 
+}
+
+.time__one {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    text-decoration: none;
+}
+
+.time__two {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    margin-left: 17px;
+    text-decoration: none;
+}

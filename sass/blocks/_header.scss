@@ -1,13 +1,92 @@
 
+.site-header {
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-  
+.header__inner {
+    @include flex-start;
+    justify-content: space-between;
+    position: relative;
+}
 
-  
-} 
+.logo {
+    display: inline-block;
+}
+
+.logo__img {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    display: block;
+    width: 177px;
+    height: 80px;
+}
+
+.menu__list {
+    @include flex-start;
+    @include list-global;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu__item + .menu__item {
+    margin-left: 55px;
+}
+
+.menu__item:nth-child(1) {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: -27px;
+        bottom: 0;
+        width: 20px;
+        height: 18px;
+        margin-right: 7px;
+        background-image: url("../../images/menu-fish.svg");
+        background-repeat: no-repeat;
+        background-size: 20px 18px;
+        background-position: center; 
+    }
+}
+
+.menu__link {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.header__item {
+    @include flex-start;
+    &::before {
+        content: "";
+        position: relative;
+        background-image: url("../../images/menu-pet.svg");
+        object-fit: cover;
+        width: 23px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-right: 7px;
+    }
+}
+
+.last-link {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    color: #333333;
+    text-decoration: none;
+}

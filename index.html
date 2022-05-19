@@ -4,9 +4,136 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Imtihon</title>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-
+  <nav class="top-header header">
+    <div class="container">
+      <div class="header__top">
+        <address class="header__top-add-left">
+          г. Мариуполь, проспект Победы, 48а
+        </address>
+        <div class="header__dflex tel">
+          <a class="tel__one" href="tel:998380412" >(067) 634 -75 - 74</a>
+          <a class="tel__two" href="tel:998380412" >(0637) 57 - 01 - 31</a>
+          <a class="tel__there" href="tel:998380412">(098) 266 - 43 - 89</a>
+        </div>
+        <div class="header__dflex time">
+          <a href="#" class="time__one">Пн - Пт 8:00 - 18:00</a>
+          <a href="#" class="time__two">Сб - Вс 8:00 - 14:00</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header class="site-header header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="./index.html">
+          <img class="logo__img" src="./images/vet-logo.svg" width="177" height="86" alt="vet site logo" title="vet site title" />
+        </a>
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О Клинике</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Наши Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Полезные Статьи</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">FAQ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__item last">
+          <a class="last-link" href="#">Задать вопрос</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="site-main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__list">
+          <h1 class="hero__title">Мы заботимся о <span class="hero__title-item">ваших питомцах!</span></h1>
+          <div class="hero__item">
+            <p class="hero__text">Вам и Вашему любимцу множество услуг по диагностике, профилактике заболеваний по лечению и уходу за Вашими животными. Профессионалы работающие в нашей клинике сделают все для того, чтобы быстро, эффективно и максимально безболезненно выполнить любие процедуры, которые необходимы Вашему домашнему любимцу.</p>
+          </div>
+          <a class="hero__link" href="#">Наши услуги</a>
+        </div>
+      </div>
+    </section>
+    <section class="quote">
+      <div class="container">
+        <div class="quote__list">
+          <div class="quote__item">
+            <span class="quote__line"></span>
+            <blockquote class="quote__title">Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу. Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную ветеринарную помощь.</blockquote>
+            <span class="quote__line"></span>
+          </div>
+          <strong class="quote__text">Оржоникидзевская Ветеринарная клиника</strong>
+        </div>
+      </div>
+    </section>
+  <section class="service">
+    <div class="container">
+      <div class="service__box">
+        <h2 class="service__title">Наши услуги</h2> 
+      <ul class="service__list">
+        <li class="service__item">
+          <a class="service__link" href="#">Первичный осмотр</a>
+        </li>
+        <li class="service__item">
+          <a class="service__link" href="#">Первичный осмотр</a>
+        </li>
+        <li class="service__item">
+          <a class="service__link" href="#">Хирургическое вмешательство</a>
+        </li>
+        <li class="service__item">
+          <a class="service__link" href="#">Дерматология</a>
+        </li>
+        <li class="service__item">
+          <a class="service__link" href="#">Лабораторная диагностика</a>
+        </li>
+        <li class="service__item">
+          <a class="service__link" href="#">Офтальмология</a>
+        </li>
+      </ul>   
+      <div class="service__content-box">
+        <picture class="img-box">
+          <!-- WEBP -->
+          <source
+            type="image/webp"
+            srcset="./images/service-insp-webp.webp 1x, ./images/service-webp-insp@2x.webp 2x"
+          />
+          <!-- JPG -->
+          <img class="service__img" 
+            src="./images/service-insp-img "
+            srcset="./images/service-insp-img 1x, ./images/service-img-insp@2x.jpg 2x"
+            width="524"
+            height="329"
+            alt="The picture depicts a human hand and a cat">
+        </picture>
+        <div class="service__content">
+          <h3 class="service__subject">Первичный осмотр</h3>
+          <p class="service__text">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+          <p class="service__text">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+          <a class="service__link-price" href="#">Узнать цену</a>
+          <a class="service__link-sign" href="#">Записаться на приём</a>
+        </div>
+      </div>
+      </div>      
+    </div>
+  </section>
+</main>
 </body>
 </html>
